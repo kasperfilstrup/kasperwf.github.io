@@ -81,8 +81,7 @@ main {
   font-weight: 500;
   font-size: .9rem;
   color: rgba(0,0,0,.55);
-  line-height: 3rem;
-  margin: 0;
+  margin: 1.5rem 0 0;
 }
 
 .card.experience {
@@ -182,25 +181,26 @@ h2.out {
   page-break-after: avoid;
   /*max-width: 670px;*/
 }
-
-.projects {
-  margin: -10px -10px 50px -10px;
-}
-.projects:after {
-  content:" ";
-  display:block;
-  clear:both;
-}
-.project-float {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-.project-float:nth-child(odd) {
-  clear: left;
-}
-.project.card {
-  margin-bottom: 0;
+@media screen and (min-width: 580px) {
+  .projects {
+    margin: -10px -10px 50px -10px;
+  }
+  .projects:after {
+    content:" ";
+    display:block;
+    clear:both;
+  }
+  .project-float {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  .project-float:nth-child(odd) {
+    clear: left;
+  }
+  .project.card {
+    margin-bottom: 0;
+  }
 }
 .project {
   border-bottom: 1px solid rgb(230, 233, 236);
