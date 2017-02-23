@@ -1,0 +1,18 @@
+.profile-image {
+  background: none;
+  margin-left: -64px;
+  margin-top: -64px;
+}
+.profile-image img { 
+  display: block;
+}
+.projects {
+  margin: 0;
+}
+.projects:after {
+  display:none;
+}
+.project-float {
+  float: none;
+  width: 100%;
+}
