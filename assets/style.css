@@ -253,3 +253,37 @@ h2.out {
   vertical-align: bottom;
   margin-right: 5px;
 }
+
+@media screen and (min-width: 580px) {
+  .splitscreen {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+  .splitscreen > div + div {
+    margin-left: 30px;
+  }
+
+  .splitscreen .half {
+    flex: 1;
+  }
+  .splitscreen .third {
+    flex: 1 1 33.3333%;
+  }
+  .splitscreen .twothirds {
+    flex: 1 1 66.6666%;
+  }
+
+}
+
+.core_skills {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: rgba(0,0,0, 0.4)
+}
